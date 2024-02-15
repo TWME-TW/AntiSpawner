@@ -1,0 +1,4 @@
+name: AntiSpawner
+version: '${project.version}'
+main: dev.twme.antispawner.AntiSpawner
+api-version: '1.20'
