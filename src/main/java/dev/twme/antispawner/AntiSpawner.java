@@ -1,7 +1,6 @@
 package dev.twme.antispawner;
 
 import dev.twme.antispawner.listeners.BlockPlaceEventListener;
-import dev.twme.antispawner.listeners.CreatureSpawnEventListener;
 import dev.twme.antispawner.listeners.SpawnerSpawnEventListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -21,7 +20,6 @@ public final class AntiSpawner extends JavaPlugin {
 
     private void registerListeners() {
         Bukkit.getServer().getPluginManager().registerEvents(new SpawnerSpawnEventListener(), this);
-        // Bukkit.getServer().getPluginManager().registerEvents(new CreatureSpawnEventListener(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new BlockPlaceEventListener(), this);
 
     }
